@@ -1,0 +1,14 @@
+/* scatterplot.scss */
+.custom-area .recharts-area .recharts-area-fill {
+  fill: #000000 !important;  /* Custom fill color */
+  stroke: black;
+}
+
+.custom-area .recharts-area .recharts-area-stroke {
+  stroke: #000000 !important; /* Custom stroke color */
+}
+
+
+.custom-d-area{
+  stroke: black!important;
+}

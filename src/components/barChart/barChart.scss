@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.bar-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-fill {
+  fill: var(--active-hover-color); 
+}

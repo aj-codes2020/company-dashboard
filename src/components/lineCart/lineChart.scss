@@ -1,0 +1,12 @@
+@import '../../App.scss';
+  /* Custom stroke color for the Line */
+
+.recharts-line {
+    stroke: var(--active-hover-color) !important; 
+    color: var(--active-hover-color);
+}
+.recharts-line .recharts-line-curve {
+    stroke: var(--active-hover-color) !important; 
+    color: var(--active-hover-color);
+}
+  

@@ -1,0 +1,280 @@
+/* ---- App Colors---- */
+:root {
+  --background: #151a2c;
+  --middleground: #3d445a;
+  --foreground: #262c3f;
+  --text-color: #fff;
+  --active-hover-color: #8884d8;
+  --transition: 0.2s ease-in-out;
+
+  --svg-fill-color: var(--text-color); /* Define your SVG fill color */
+  --svg-stroke-color: #000000; /* Define your SVG stroke color */
+}
+
+.svg-container {
+  width: 50px;
+  height: 50px;
+}
+
+.cls-1 { fill: var(--svg-fill-color); font-family: AutoPro-LightSmallCaps, "Auto Pro"; font-size: 15.79px; font-weight: 300; }
+.cls-2 { letter-spacing: -.01em; }
+.cls-3 { fill: var(--svg-fill-color); stroke-width: 0px; }
+.cls-4 { letter-spacing: -.01em; }
+.cls-5 { letter-spacing: 0em; }
+/* ---- Sidebar ---- */
+
+/* General sidebar styling */
+.sidebar {
+  background-color: var(--foreground) !important;
+}
+
+.sidebar-title {
+  display: flex;
+  flex-direction: row;
+  border-bottom: none !important;
+  height: 73px !important;
+  color: var(--text-color);
+}
+
+.sidebar-subtitle {
+  margin-left: 20px;
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--foreground) !important;
+}
+
+.page-title {
+  font-size: 2.5rem;
+}
+
+.sidebar-logo {
+  gap: 0rem !important;
+}
+
+.main-logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.sidebar-logo svg{
+  color: #151a2c;
+}
+
+.hamburger-menu {
+  color: var(--text-color);
+}
+
+.sidebar-title .close-menu {
+  padding-top: 8px;
+  color: var(--text-color);
+}
+
+
+
+/* Sidebar Navigation Links */
+.sidebar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  width: 100%;
+  position: relative;
+}
+
+.sidebar-nav .nav-link:hover {
+  color: white;
+}
+
+.sidebar-nav .nav-link::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: inline-block;
+  width: 0.7rem;
+  margin-right: 1rem;
+}
+
+.avatar {
+  margin-top: 2.5px;
+}
+
+/* Icons for specific links */
+.sidebar-nav .home-link::before {
+  content: '\f3fd';
+}
+
+.sidebar-nav .insight-link::before {
+  content: '\f080';
+}
+
+.sidebar-nav .assignment-link::before {
+  content: '\f0ae';
+}
+
+.sidebar-nav .client-link::before {
+  content: '\f0c0';
+}
+
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav li:hover, .sidebar-nav li {
+  border-radius: 10px;
+  color: white;
+}
+
+.sidebar-nav li:hover, .sidebar-nav li .active {
+  background-color: var(--active-hover-color) !important;
+  border-radius: 10px;
+  transition: var(--transition);
+  color: white;
+}
+
+/* Icon Group */
+.icon-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9px;
+}
+
+.icon-group a {
+  padding: 8px 10px 8px 10px;
+  border-radius: 50%;
+  margin-right: 7px;
+  color: var(--text-color) !important;
+  transition: var(--transition);
+}
+
+.icon-group a:hover {
+  background-color: var(--active-hover-color);
+  color: white!important;
+}
+
+.icon-group-avatar .popover-box {
+  position: absolute !important;
+  border: 1px solid var(--background);
+  margin-top: 17px;
+  transform: translateX(-89.5%);
+  width: 300px;
+  background-color: var(--foreground);
+}
+
+/* ---- Section Header Styles---- */
+.header-grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+
+
+/* ---- Modal Content ---- */
+.modal {
+  background-color: var(--foreground);
+  color: var(--text-color);
+}
+
+.modal-close {
+  color: var(--text-color);
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 1rem;
+  color: var(--text-color);
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.modal-content input {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  background-color: var(--middleground);
+  border: none;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.modal-content input::placeholder {
+  color: var(--text-color);
+}
+
+.modal .button {
+  margin-top: 10px;
+  color: var(--text-color);
+  background-color: var(--active-hover-color);
+}
+
+.modal .select-container {
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.modal .select-control .placeholder {
+  color: var(--text-color);
+}
+
+.modal .select-control .arrow {
+  color: var(--text-color);
+}
+
+.select-option:hover, .select-option.selected {
+  background-color: var(--active-hover-color);
+}
+
+.modal .select-menu {
+  background-color: var(--middleground);
+  border: 1px solid var(--middleground);
+}
+
+.modal .select-control {
+  background-color: var(--middleground);
+  border: 1px solid var(--background);
+  border-radius: 5px;
+}
+
+/* ---- Add New Button ---- */
+.add-new-button {
+  background-color: var(--foreground);
+  color: var(--text-color);
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--foreground);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button--secondary {
+  background-color: var(--active-hover-color);
+  color: white;
+}
+
+.popover-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover-content .button--secondary {
+  width: 50%;
+}

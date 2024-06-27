@@ -1,0 +1,79 @@
+@import '../../App.scss';
+
+/* ---- Task Card ---- */
+
+/* Styling for the task card */
+.task-card {
+  margin: 5px;
+  background-color: var(--foreground);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---- Task Header ---- */
+
+/* Styling for the task header */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  color: var(--text-color);
+}
+
+/* Styling for the task title */
+.task-title {
+  flex: 1;
+}
+
+/* Styling for the task edit button */
+.task-edit-button {
+  flex: 0;
+}
+
+/* ---- Task Description ---- */
+
+/* Styling for the task description */
+.task-description {
+  padding: 3px 0;
+  color: var(--text-color);
+}
+
+/* ---- Task Footer ---- */
+
+/* Styling for the task footer */
+.task-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0.4rem;
+  color: var(--text-color);
+  gap: 0.7rem;
+}
+
+/* Styling for the task assignee */
+.task-assigned-to {
+  flex: 3;
+}
+
+/* Styling for the task status */
+.task-status {
+  flex: 1;
+  text-align: right;
+}
+
+/* ---- Edit Button ---- */
+
+/* Styling for the edit button */
+.edit-button {
+  padding: 7px;
+  border-radius: 50%;
+  transition: var(--transition);
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+/* Hover effect for the edit button */
+.edit-button:hover {
+  background-color: var(--active-hover-color);
+}

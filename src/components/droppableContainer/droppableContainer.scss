@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+/* ---- Task Container ---- */
+.task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--foreground);
+  min-height: 570px;
+  height: auto;
+  border: 5px solid var(--background);
+  border-radius: 10px;
+}
+
+/* ---- Task Sub Container ---- */
+.task-sub-container {
+  @import '../../App.scss';
+
+  /* ---- Task Container ---- */
+  
+  /* General styling for the task container */
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--foreground);
+    min-height: 570px;
+    height: auto;
+    border: 5px solid var(--background);
+    border-radius: 10px;
+  }
+  
+  /* ---- Task Sub Container ---- */
+  
+  /* General styling for the sub-container within the task container */
+  .task-sub-container {
+    background-color: var(--middleground);
+    min-height: 85%;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  
+  background-color: var(--middleground);
+  min-height: 85%;
+  height: auto;
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}

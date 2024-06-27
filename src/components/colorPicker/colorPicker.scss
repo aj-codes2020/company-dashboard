@@ -1,0 +1,72 @@
+@import '../../App.scss';
+
+.color-picker-wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+.color-picker-button {
+  width: 50px;
+  height: 50px;
+  border: 2px gray;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  z-index: 999!important;
+}
+
+.color-picker-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  opacity: 0;
+  transform: translateY(80px);
+  z-index: 998;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.active {
+    border: 2px solid white;
+  }
+}
+
+.color-picker-color {
+  height: 50px;
+  width: 10px;
+}
+
+@mixin color-style($color) {
+  background-color: $color;
+}
+
+.red { @include color-style(red); }
+.blue { @include color-style(blue); }
+.grey { @include color-style(grey); }
+.black { @include color-style(black); }
+.orange { @include color-style(orange); }
+.brown { @include color-style(brown); }
+.green { @include color-style(green); }
+.yellow { @include color-style(yellow); }
+.white { @include color-style(white); }
+.purple { @include color-style(purple); }

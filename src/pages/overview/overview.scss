@@ -1,0 +1,72 @@
+@import '../../App.scss';
+
+/* ---- Tag Container ---- */
+
+/* General container for each tag */
+.tag-container {
+  background-color: var(--foreground);
+  min-height: 75px;
+  height: auto;
+  border: 5px solid var(--background);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+}
+
+/* Icon styling within the tag container */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  width: auto;
+}
+
+/* ---- Tag Statistics ---- */
+
+/* Container for tag statistics */
+.tag-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+/* Styling for the tag title */
+.tag-stat p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the tag value */
+.tag-stat h2 {
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.25rem;
+  color: var(--active-hover-color);
+}
+
+/* ---- Tag Upper Section ---- */
+
+/* Container for the upper section of the tag */
+.upper-tag-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Tag Lower Section ---- */
+
+/* Container for the lower section of the tag */
+.lower-tag-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid var(--active-hover-color);
+  gap: 0.5rem;
+}
